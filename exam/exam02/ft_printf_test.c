@@ -5,6 +5,8 @@
 #define max(a, b) (((a) < (b)) ? (b) : (a))
 #define min(a, b) (((a) > (b)) ? (b) : (a))
 
+int print_size;
+
 int numlen(long long num, int base)
 {
 	int i;
@@ -29,18 +31,16 @@ void ft_putnbr(long long num, int base, char *bs )
 {
 	if(num > 9)
 		ft_putnbr(num / base, base, bs);
-	write(1, &bs[num % base],1);
+	print_size += write(1, &bs[num % base], 1);
 }
 
 int ft_printf(char *format, ...)
 {
 	va_list ap;
 	int i;
-	int print_size;
 	int width;
 	int dot;
 	int pre;
-	int preis;
 	int idx;
 
 	print_size = 0;
@@ -52,7 +52,6 @@ int ft_printf(char *format, ...)
 		width = 0;
 		dot = 0;
 		pre = 0;
-		preis = 0;
 		if (format[i] == '%')
 		{
 			++i;
@@ -74,9 +73,9 @@ int ft_printf(char *format, ...)
 				else
 					while (format[i] >= '0' && format[i] <= '9')
 					{
-						preis = 1;
 						pre = pre * 10 + (format[i] - '0');
 						++i;
+					}
 			}
 			if (format[i] == 's')
 			{
@@ -85,7 +84,7 @@ int ft_printf(char *format, ...)
 					s = "(null)";
 				if (dot == 1 && pre == 0)
 					s = "";
-				if (preis == 0)
+				if (dot == 0)
 					pre = ft_strlen(s);
 				while (idx < width - min(ft_strlen(s), pre))
 				{
@@ -121,12 +120,9 @@ int ft_printf(char *format, ...)
 					++idx;
 				}
 				if (num == 0 && dot == 1 && pre == 0)
-					write(1, "", 1);
+					;
 				else
-				{
 					ft_putnbr(num, 10, BASE);
-					print_size += numlen(num, 10);
-				}
 			}
 			else if(format[i] == 'x')
 			{
@@ -145,12 +141,9 @@ int ft_printf(char *format, ...)
 					++idx;
 				}
 				if (num == 0 && dot == 1 && pre == 0)
-					write(1, "", 1);
+					;
 				else
-				{
 					ft_putnbr(num, 16, BASEX);
-					print_size += numlen(num, 16);
-				}
 			}
 			else
 				--i;
