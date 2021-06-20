@@ -61,7 +61,7 @@ int main(void)
 
 
 	printf("\n\nTEST %%d\n\n");
-	int num = 0;
+	int num = -42;
 	printf("\n___TEST %%d___\n");
 	printf("No original - %d\n", ft_printf("|%d|\n", num));
 	printf("Original - %d\n", printf("|%d|\n", num));

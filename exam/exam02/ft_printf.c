@@ -84,8 +84,7 @@ int ft_printf(char *format, ...)
 					++width;
 				for (int idx = 0 ; idx < width - sign - max(pre, numlen(num, 10)) ; idx++)
 					print_size += write(1, " ", 1);
-				if (sign == 1)
-					print_size += write(1, "-", 1);
+				print_size += write(1, "-", sign);
 				for (int idx = 0 ; idx < pre - numlen(num, 10) ; idx++)
 					print_size += write(1, "0", 1);
 				if (num != 0 || dot != 1 || pre != 0)
