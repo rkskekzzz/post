@@ -1,0 +1,50 @@
+[
+  {
+    "name": "a",
+    "path": "file/a",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/rkskekzzz/branch01/contents/file/a?ref=main",
+    "html_url": "https://github.com/rkskekzzz/branch01/blob/main/file/a",
+    "git_url": "https://api.github.com/repos/rkskekzzz/branch01/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "download_url": "https://raw.githubusercontent.com/rkskekzzz/branch01/main/file/a",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/rkskekzzz/branch01/contents/file/a?ref=main",
+      "git": "https://api.github.com/repos/rkskekzzz/branch01/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "html": "https://github.com/rkskekzzz/branch01/blob/main/file/a"
+    }
+  },
+  {
+    "name": "b",
+    "path": "file/b",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/rkskekzzz/branch01/contents/file/b?ref=main",
+    "html_url": "https://github.com/rkskekzzz/branch01/blob/main/file/b",
+    "git_url": "https://api.github.com/repos/rkskekzzz/branch01/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "download_url": "https://raw.githubusercontent.com/rkskekzzz/branch01/main/file/b",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/rkskekzzz/branch01/contents/file/b?ref=main",
+      "git": "https://api.github.com/repos/rkskekzzz/branch01/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "html": "https://github.com/rkskekzzz/branch01/blob/main/file/b"
+    }
+  },
+  {
+    "name": "c",
+    "path": "file/c",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "size": 0,
+    "url": "https://api.github.com/repos/rkskekzzz/branch01/contents/file/c?ref=main",
+    "html_url": "https://github.com/rkskekzzz/branch01/blob/main/file/c",
+    "git_url": "https://api.github.com/repos/rkskekzzz/branch01/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "download_url": "https://raw.githubusercontent.com/rkskekzzz/branch01/main/file/c",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/rkskekzzz/branch01/contents/file/c?ref=main",
+      "git": "https://api.github.com/repos/rkskekzzz/branch01/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "html": "https://github.com/rkskekzzz/branch01/blob/main/file/c"
+    }
+  }
+]

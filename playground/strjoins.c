@@ -46,7 +46,7 @@ int main(void)
 	char *comma;
 	char **arg;
 
-	test = "hi";
+	test = strdup("hi");
 	comma = ",";
 	arg = (char *[3]){
 		test,
