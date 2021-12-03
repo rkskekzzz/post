@@ -36,7 +36,7 @@ function gitUrlParse() {
 async function getRepositoryContents(item, path) {
   const results = await request('GET /repos/{owner}/{repo}/contents/{path}', {
     headers: {
-      Authorization: 'token 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',
+      Authorization: 'token ',
     },
     owner: item.owner,
     repo: item.name,
